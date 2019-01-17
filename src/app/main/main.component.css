@@ -1,0 +1,17 @@
+.block_1 {
+    min-width: 250px;
+}
+
+.block_2 {
+    min-width: 250px;
+}
+
+.block_3 {
+    min-width: 250px;
+}
+
+.logo,
+.contacts,
+.mess {
+    border: 1px solid black;
+}
