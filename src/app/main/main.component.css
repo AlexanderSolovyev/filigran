@@ -1,17 +1,121 @@
-.block_1 {
-    min-width: 250px;
-}
+.block_1 {}
 
-.block_2 {
-    min-width: 250px;
-}
+.block_2 {}
 
-.block_3 {
-    min-width: 250px;
-}
+.block_3 {}
 
 .logo,
 .contacts,
-.mess {
-    border: 1px solid black;
+.mess,
+.container,
+.block_1,
+.block_2,
+.block_3 {
+    border: 0px solid yellow;
+}
+
+.logo {
+    padding-top: 1em;
+}
+
+.contacts {
+    padding-top: 2em;
+}
+
+.background1 {
+    background-image: url("../../assets/background.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 600px;
+}
+
+.background {
+    top: 0;
+    height: 100vh;
+}
+
+.fullscreen-bg {
+    filter: blur(0px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -100;
+    overflow: hidden;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        height: 300%;
+        top: -100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        width: 300%;
+        left: -100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('../../assets/eh5v.files/html5video/background.jpg') center center / cover no-repeat;
+    }
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+
+p,
+h1,
+h2 {
+    color: #ffc107;
+    font-family: AmericanTypewriter;
+}
+
+h1,
+h2,
+h3 {
+    letter-spacing: -1.7px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    font-family: AmericanTypewriter;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 4em;
+    }
+}
+
+.material-icons.yellow {
+    color: #ffc107;
+}
+
+.material-icons {
+    font-size: 2em;
 }
